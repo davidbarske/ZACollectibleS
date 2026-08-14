@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZA Collectibles — structured collectible intelligence and selective acquisition.">
+  <meta name="theme-color" content="#151a1e">
+  <title>The Vault | ZA Collectibles</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+  <script src="js/vault.js" defer></script>
+</head>
+<body class="">
+  <div data-site-header></div>
+  
+<main id="main" data-vault-app>
+  <section class="page-hero with-image">
+    <div class="page-hero-media"><img src="assets/images/hero-curation.webp" alt="Curated historical objects, coins, gemstones and bladed artefacts"></div>
+    <div class="container page-hero-content">
+      <p class="eyebrow">The Vault</p>
+      <h1>Current curation, not commodity inventory.</h1>
+      <p class="lede">Objects should be evaluated in context: history, condition, provenance, scarcity and the meaning of the transaction.</p>
+      <div class="page-hero-meta"><span class="chip gold">Editorial pacing</span><span class="chip muted">Selective acquisition</span></div>
+    </div>
+  </section>
+
+  <section class="section black">
+    <div class="container">
+      <div class="vault-toolbar">
+        <div class="filter-group" aria-label="Vault filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="numismatics">Numismatics</button>
+          <button class="filter-btn" data-filter="gemmology">Gemmology</button>
+          <button class="filter-btn" data-filter="future">Future Disciplines</button>
+        </div>
+        <span class="small">Prototype curation only — replace with verified inventory before launch.</span>
+      </div>
+
+      <div class="vault-grid">
+        <article class="vault-card reveal" data-discipline="numismatics">
+          <div class="vault-card-image"><img src="assets/images/numismatics-detail.webp" alt="Coins and archival material"></div>
+          <div class="vault-card-body">
+            <div>
+              <div class="meta">Numismatics · Curatorial preview</div>
+              <h3 style="margin-top:10px">Archive Coin Study</h3>
+              <p>A demonstration object page showing how numismatic material can be framed through evidence, condition and provenance rather than commodity-grid treatment.</p>
+            </div>
+            <div>
+              <div class="small" style="margin-bottom:14px">Availability: Prototype only</div>
+              <a class="btn btn-outline" href="item.html">Inspect Object</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vault-card reveal" data-discipline="gemmology">
+          <div class="vault-card-image"><img src="assets/images/gemmology-detail.webp" alt="Loose coloured gemstones"></div>
+          <div class="vault-card-body">
+            <div>
+              <div class="meta">Gemmology · Curatorial preview</div>
+              <h3 style="margin-top:10px">Certified Gemstone Study</h3>
+              <p>A demonstration acquisition state separating certificate data, physical evidence and valuation purpose.</p>
+            </div>
+            <div>
+              <div class="small" style="margin-bottom:14px">Availability: Prototype only</div>
+              <button class="btn btn-outline" data-open-dialog="acquisitionDialog" data-acquisition-title="Certified Gemstone Study">Request Acquisition</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="vault-card reveal" data-discipline="future">
+          <div class="vault-card-image"><img src="assets/images/militaria-detail.webp" alt="Historical bladed objects and collectible material"></div>
+          <div class="vault-card-body">
+            <div>
+              <div class="meta">Militaria · Future discipline</div>
+              <h3 style="margin-top:10px">Bladed Militaria</h3>
+              <p>Reserved as a future module. The presentation demonstrates how high-context objects can be given space, evidence and historical weight.</p>
+            </div>
+            <div>
+              <div class="small" style="margin-bottom:14px">Not in initial live assessment lanes</div>
+              <a class="btn btn-outline" href="disciplines.html#future">View Discipline Roadmap</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vault-card reveal" data-discipline="future">
+          <div class="vault-card-image"><img src="assets/images/archive-relief.webp" alt="Relief artwork composed of historical collectible forms"></div>
+          <div class="vault-card-body">
+            <div>
+              <div class="meta">Archive · Future curation</div>
+              <h3 style="margin-top:10px">Mixed Historical Objects</h3>
+              <p>Designed to demonstrate broader category expansion without pretending the v1 intelligence engine already covers every collectible class.</p>
+            </div>
+            <div>
+              <div class="small" style="margin-bottom:14px">Register interest only</div>
+              <button class="btn btn-outline" data-open-dialog="acquisitionDialog" data-acquisition-title="Mixed Historical Objects">Register Interest</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section paper">
+    <div class="narrow">
+      <p class="eyebrow">Transaction design</p>
+      <h2>Not every object deserves the same friction.</h2>
+      <p class="lede">Accessible material may use conventional purchase flow. Curated mid-tier objects can use Request Acquisition. Exceptional objects may justify private acquisition discussion or POA.</p>
+      <p>The point is not to hide prices for theatre. The point is to match the transaction interface to the actual object, evidence and commercial complexity.</p>
+    </div>
+  </section>
+
+  <dialog id="acquisitionDialog">
+    <div class="dialog-head"><h3>Acquisition Enquiry</h3><button class="dialog-close" type="button" data-close-dialog aria-label="Close">×</button></div>
+    <div class="dialog-body">
+      <p class="prototype-note"><strong>Prototype only:</strong> this form demonstrates the controlled acquisition interaction. It is not connected to email, CRM or payment processing.</p>
+      <form data-prototype-form>
+        <div class="form-grid" style="margin-top:18px">
+          <div class="field full"><label for="acquisitionObject">Object</label><input id="acquisitionObject" value="Curatorial preview" readonly></div>
+          <div class="field"><label for="acqName">Name</label><input id="acqName" required></div>
+          <div class="field"><label for="acqEmail">Email</label><input id="acqEmail" type="email" required></div>
+          <div class="field full"><label for="acqNote">Acquisition note</label><textarea id="acqNote" placeholder="What would you like to understand before proceeding?"></textarea></div>
+        </div>
+        <button class="btn btn-dark" style="margin-top:18px">Submit Prototype Enquiry</button>
+      </form>
+    </div>
+  </dialog>
+</main>
+
+  <div data-site-footer></div>
+</body>
+</html>

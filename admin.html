@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ZA Collectibles — structured collectible intelligence and selective acquisition.">
+  <meta name="theme-color" content="#151a1e">
+  <title>QA Review Console | ZA Collectibles</title>
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+  
+</head>
+<body class="light-workspace">
+  <div data-site-header></div>
+  
+<main id="main" class="light-workspace">
+  <section class="page-hero" style="min-height:42vh">
+    <div class="container page-hero-content">
+      <p class="eyebrow">Internal Prototype</p>
+      <h1>QA Review Console</h1>
+      <p class="lede">Expose assumptions, contradictions and release risk. Do not mirror the client-facing interface.</p>
+    </div>
+  </section>
+
+  <section class="section paper">
+    <div class="container">
+      <div class="prototype-note" style="margin-bottom:22px"><strong>Prototype admin:</strong> this is a static demonstration of the intended internal review console. There is no authentication or backend connection in this draft.</div>
+      <div class="admin-grid">
+        <section class="admin-panel">
+          <p class="eyebrow">Evidence / structured record</p>
+          <h3>Case ZAC-DEMO-001</h3>
+          <div class="grid-2">
+            <div class="image-panel" style="min-height:340px"><img src="assets/images/numismatics-detail.webp" alt="Demonstration evidence image"></div>
+            <div>
+              <div class="qa-row"><span>Category</span><strong>Numismatics</strong></div>
+              <div class="qa-row"><span>Capture mode</span><strong>Snapshot</strong></div>
+              <div class="qa-row"><span>Valuation context</span><strong>Collector market</strong></div>
+              <div class="qa-row"><span>Identification confidence</span><strong>48%</strong></div>
+              <div class="qa-row"><span>Authenticity confidence</span><strong>31%</strong></div>
+              <div class="qa-row"><span>Condition confidence</span><strong>42%</strong></div>
+              <div class="qa-row"><span>Value confidence</span><strong>28%</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <p class="eyebrow">Adversarial QA</p>
+          <h3>Weak assumptions and blockers</h3>
+          <div class="qa-row"><span>Reverse image missing</span><span class="chip red">Blocker</span></div>
+          <div class="qa-row"><span>Edge not visible</span><span class="chip gold">Material gap</span></div>
+          <div class="qa-row"><span>Weight not recorded</span><span class="chip gold">Material gap</span></div>
+          <div class="qa-row"><span>Counterfeit assessment</span><span class="chip muted">Not supportable</span></div>
+          <div class="qa-row"><span>Value range</span><span class="chip muted">Withhold</span></div>
+          <div class="admin-actions">
+            <button class="btn btn-dark" type="button" onclick="ZA.toast('Prototype: release action is not connected.')">Release</button>
+            <button class="btn btn-quiet" type="button" onclick="ZA.toast('Prototype: evidence request is not connected.')">Return for Evidence</button>
+            <button class="btn btn-quiet" type="button" onclick="ZA.toast('Prototype: escalation queue is not connected.')">Escalate</button>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <p class="eyebrow">Canonical structured record</p>
+          <div class="code-block">{
+  "item_id": "ZAC-DEMO-001",
+  "category": "coin",
+  "observed": [
+    "one broad image supplied"
+  ],
+  "inferred": [
+    "probable numismatic object"
+  ],
+  "missing": [
+    "reverse image",
+    "edge image",
+    "weight",
+    "diameter"
+  ],
+  "blockers": [
+    "identity not stable enough for ranging"
+  ],
+  "release_state": "hold"
+}</div>
+        </section>
+
+        <section class="admin-panel">
+          <p class="eyebrow">Run provenance</p>
+          <h3>Version and evidence trace</h3>
+          <div class="qa-row"><span>Intake normaliser</span><strong>P1 · demo</strong></div>
+          <div class="qa-row"><span>Blocker checker</span><strong>P2 · demo</strong></div>
+          <div class="qa-row"><span>Coin identifier</span><strong>Not connected</strong></div>
+          <div class="qa-row"><span>Range builder</span><strong>Not run</strong></div>
+          <div class="qa-row"><span>QA reviewer</span><strong>Manual mock</strong></div>
+          <div class="qa-row"><span>Evidence revision</span><strong>1</strong></div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <div data-site-footer></div>
+</body>
+</html>
