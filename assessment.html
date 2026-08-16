@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Digital Collectible Intake | ZA Collectibles</title>
+  <meta name="description" content="Progressive digital intake for collectible appraisal and evaluation."/>
+  <meta name="theme-color" content="#070808"/>
+  <link rel="icon" href="assets/images/za-crest.png"/>
+  <link rel="stylesheet" href="assets/css/site.css"/>
+</head>
+<body class="assessment-page">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="ZA Collectibles home">
+      <img src="assets/images/za-crest.png" alt="ZA Collectibles crest"/>
+      <span class="brand-copy"><strong>ZA COLLECTIBLES</strong><span>Heritage &amp; Collectibles House</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <div class="nav-drop nav-pair"><a class="nav-parent" href="services.html">Services</a><button class="nav-arrow" type="button" aria-label="Open services menu">▾</button><div class="dropdown"><a href="appraisals.html">Appraisals &amp; Evaluations</a><a href="authentication.html">Research &amp; Authentication</a><a href="buy-sell.html">Buying, Selling &amp; Consignment</a><a href="auctions.html">Auctions &amp; Curated Sales</a><a href="sourcing.html">Private Sourcing</a><a href="collection-services.html">Collection Services</a><a href="packaging.html">Preserve &amp; Present</a></div></div>
+      <div class="nav-drop nav-pair object-drop"><a class="nav-parent" href="disciplines.html">Collectibles</a><button class="nav-arrow" type="button" aria-label="Open collectibles menu">▾</button><div class="dropdown"><a href="coins.html">Coins &amp; Numismatics</a><a href="stamps.html">Stamps &amp; Postal History</a><a href="gemstones.html">Gemstones &amp; Jewellery</a><a href="militaria.html">Militaria &amp; Historical Weapons</a><a href="banknotes.html">Banknotes &amp; Currency</a><a href="toys.html">Toys, LEGO &amp; Models</a><a href="historical-objects.html">Ancient &amp; Historical Objects</a></div></div>
+      <a href="vault.html">Latest</a><a href="journal.html">Knowledge</a><a href="about.html">About</a>
+      <a class="ai-nav" href="intelligence.html"><span>New</span> AI Intelligence</a>
+    </nav>
+    <a class="login-link" href="login.html">Client Login</a>
+    <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a class="mobile-feature" href="intelligence.html"><small>Coming Soon</small><strong>AI Collection Intelligence</strong><span>Photograph, identify, sort and map what you own.</span></a>
+    <div class="mobile-nav-group"><a class="mobile-nav-title" href="services.html">Services</a><a href="appraisals.html">Appraisals &amp; Evaluations</a><a href="authentication.html">Research &amp; Authentication</a><a href="buy-sell.html">Buying, Selling &amp; Consignment</a><a href="auctions.html">Auctions &amp; Curated Sales</a><a href="sourcing.html">Private Sourcing</a><a href="collection-services.html">Collection Services</a><a href="packaging.html">Preserve &amp; Present</a></div>
+    <div class="mobile-nav-group"><a class="mobile-nav-title" href="disciplines.html">Collectibles</a><a href="coins.html">Coins</a><a href="stamps.html">Stamps</a><a href="gemstones.html">Gemstones &amp; Jewellery</a><a href="militaria.html">Militaria &amp; Historical Weapons</a><a href="banknotes.html">Banknotes</a><a href="toys.html">Toys, LEGO &amp; Models</a><a href="historical-objects.html">Ancient &amp; Historical Objects</a></div>
+    <div class="mobile-nav-group mobile-nav-final"><a href="vault.html">Latest Work</a><a href="journal.html">Knowledge Archive</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="mobile-login" href="login.html">Client Login</a></div>
+  </nav>
+</header>
+<a class="ai-rail" href="intelligence.html"><span>Coming Soon</span><b>AI Collection Intelligence</b></a>
+
+
+
+
+
+<main>
+  <section class="assessment-hero">
+    <div class="assessment-hero-media"><img src="assets/images/v5/app_tablet.webp" alt="Collectible evaluation interface beside coins and measurement tools"/></div>
+    <div class="container assessment-hero-copy">
+      <div class="eyebrow">Digital collectible intake</div>
+      <h1 class="display">Begin with the Evidence<br><span class="gold">You Already Have.</span></h1>
+      <p>Choose how much effort makes sense now. The system accepts incomplete information, records uncertainty honestly and tells you which next photograph or detail is most likely to improve the assessment.</p>
+      <a class="btn primary" href="#intake">Choose capture depth →</a>
+    </div>
+  </section>
+
+  <section class="section assessment-intro" id="intake">
+    <div class="container">
+      <div class="split-head"><div><div class="eyebrow">01 · Capture depth</div><h2 class="section-title">One Route in. Three Sensible Levels of Effort.</h2></div><p class="lead">Better evidence should tighten a conclusion, not determine whether the system can help at all.</p></div>
+      <div class="mode-grid" role="radiogroup" aria-label="Capture depth">
+        <button class="mode-card active" type="button" data-mode="snapshot" aria-pressed="true"><span>Lowest friction</span><h3>Snapshot</h3><p>One or a few broad photographs for initial classification, visible highlights and the next best capture.</p><b>Best for curiosity and first-pass triage</b></button>
+        <button class="mode-card" type="button" data-mode="quick" aria-pressed="false"><span>More context</span><h3>Quick Capture</h3><p>Photographs plus basic notes, rough counts or a certificate number for stronger provisional structure.</p><b>Best for prioritising a collection</b></button>
+        <button class="mode-card" type="button" data-mode="structured" aria-pressed="false"><span>Strongest packet</span><h3>Structured Capture</h3><p>Measurements, provenance, documents and valuation purpose combined into a reusable evidence packet.</p><b>Best for deeper review and reporting</b></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light-band evidence-workspace">
+    <div class="container evidence-layout">
+      <form class="evidence-form" id="evidenceForm">
+        <input type="hidden" id="captureMode" name="captureMode" value="snapshot"/>
+        <div class="eyebrow">02 · Build the evidence packet</div>
+        <h2>What Are We Looking at?</h2>
+        <p class="evidence-privacy">Current demonstration: files remain in your browser. Preparing the summary does not upload or send them.</p>
+        <div class="form-grid">
+          <div class="field"><label for="itemCategory">Collectible type</label><select id="itemCategory" name="category" required><option value="">Choose or select “Not sure”</option><option>Coins &amp; medals</option><option>Gemstones &amp; jewellery</option><option>Stamps &amp; postal history</option><option>Militaria &amp; edged weapons</option><option>Watches &amp; timepieces</option><option>Banknotes &amp; paper</option><option>Historical objects</option><option>Not sure</option></select></div>
+          <div class="field"><label for="workingTitle">Working title</label><input id="workingTitle" name="title" placeholder="e.g. Silver-coloured coin from family box"/></div>
+          <div class="field full"><label for="evidenceFiles">Photographs and documents</label><div class="evidence-drop"><strong>Add photographs or PDFs</strong><span>Broad view first. Front, reverse, edge, marks, labels, certificates and close details can follow.</span><input id="evidenceFiles" type="file" multiple accept="image/*,.pdf"/></div><div class="evidence-files" id="evidenceFilesList"></div></div>
+          <div class="field full progressive-field" data-min-mode="quick"><label for="ownerContext">What do you know about it?</label><textarea id="ownerContext" name="context" placeholder="Where it came from, what you think it is, rough quantity, visible damage or any known history."></textarea></div>
+          <div class="field progressive-field" data-min-mode="structured"><label for="measurements">Measurements</label><input id="measurements" name="measurements" placeholder="Weight, size, diameter or dimensions"/></div>
+          <div class="field progressive-field" data-min-mode="structured"><label for="marks">Marks or numbers</label><input id="marks" name="marks" placeholder="Hallmark, serial, certificate or report number"/></div>
+          <div class="field full"><label for="purpose">What decision must the assessment support?</label><select id="purpose" name="purpose"><option value="">Choose if known</option><option>Identification / general assessment</option><option>Collector market guidance</option><option>Dealer purchase context</option><option>Sale or consignment</option><option>Auction estimate</option><option>Insurance support</option><option>Estate reference</option><option>Collection planning</option></select></div>
+        </div>
+        <div class="btn-row"><button class="btn primary" type="submit">Prepare evidence summary →</button><a class="btn evidence-send" href="appraisals.html#request">Continue to appraisal request</a></div>
+      </form>
+      <aside class="evidence-aside">
+        <div class="eyebrow">Capture state</div><h3>What the Evidence Can Support</h3>
+        <div class="capture-state" id="captureState"></div>
+        <div class="evidence-payoff"><b>Highest-value next action</b><p id="evidencePayoff">Choose a collectible type and add one photograph. The system will identify the next useful capture.</p></div>
+        <p class="aside-note"><strong>Unknown is a valid state.</strong> Missing evidence is not bad evidence. The assessment should separate observation, inference and unresolved questions.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section assessment-output" id="assessmentOutput" hidden>
+    <div class="narrow">
+      <div class="eyebrow">Prepared evidence summary</div><h2 class="section-title">A Useful Starting Record, Not a Fake Conclusion.</h2>
+      <div class="summary-panel" id="summaryPanel"></div>
+      <div class="btn-row"><button class="btn" type="button" id="copySummary">Copy summary</button><a class="btn primary" href="appraisals.html#request">Continue to appraisal request →</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid">
+  <div class="footer-brand"><img src="assets/images/za-crest.png" alt="ZA Collectibles crest"/><p>A South African heritage and collectibles house helping people understand, acquire, sell, preserve and present objects with history.</p><a class="footer-ai" href="intelligence.html"><small>Coming Soon</small><b>AI Collection Intelligence →</b></a></div>
+  <div class="footer-col"><h4>Services</h4><a href="services.html">Services Overview</a><a href="appraisals.html">Appraisals &amp; Evaluations</a><a href="authentication.html">Research &amp; Authentication</a><a href="buy-sell.html">Buy, Sell &amp; Consign</a><a href="auctions.html">Auctions</a><a href="sourcing.html">Private Sourcing</a><a href="packaging.html">Preserve &amp; Present</a></div>
+  <div class="footer-col"><h4>Collectibles</h4><a href="disciplines.html">Collectibles Overview</a><a href="coins.html">Coins</a><a href="stamps.html">Stamps</a><a href="gemstones.html">Gemstones &amp; Jewellery</a><a href="militaria.html">Militaria &amp; Weapons</a><a href="banknotes.html">Banknotes</a><a href="toys.html">Toys, LEGO &amp; Models</a><a href="historical-objects.html">Historical Objects</a></div>
+  <div class="footer-col"><h4>Explore</h4><a href="vault.html">Latest Work</a><a href="journal.html">Knowledge Archive</a><a href="about.html">About ZA Collectibles</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms &amp; Conditions</a><a href="login.html">Client Login</a></div>
+</div><div class="container footer-bottom"><span>© 2026 ZA Collectibles. All rights reserved.</span><span>Cape Town, South Africa · By Appointment</span></div></footer>
+<script src="assets/js/site.js"></script><script src="assets/js/assessment.js"></script>
+</body>
+</html>
